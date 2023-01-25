@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="JQuery.js" defer></script>
+
+
+    <style>
+        .box {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div class="box"></div>
+
+
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <!-- <button id="btn3">toggle</button> -->
+
+
+
+    <script>
+        $(document).ready(() => {
+
+            // $("#btn1").click(() => {
+            //     $(".box").hide(1000);
+            // });
+
+
+            // $("#btn2").click(() => {
+            //     $(".box").show('slow');
+            // });
+
+            // $("#btn3").click(() => {
+            //     $(".box").toggle();
+            // });
+
+            // $("#btn1").mousedown(() => {
+            //     $('.box').css({
+            //         'background': 'red',
+            //         'border': '2px solid  #333'
+            //     })
+            // })
+
+            // $("#btn1").mouseleave(() => {
+            //     $('.box').css({
+            //         'background': 'blue',
+            //         'border': '2px solid  #333'
+            //     })
+            // })
+
+            // $("#btn1").mouseenter(() => {
+            //     $('.box').css({
+            //         'background': 'green',
+            //         'border': '2px solid  #333'
+            //     })
+            // })
+
+            // $("#btn1").dblclick(() => {
+            //     $('.box').css({
+            //         'background': 'yellow',
+            //         'border': '2px solid  #333'
+            //     })
+            // })
+
+
+            // $("#btn1").on({
+            //     click: () => {
+            //         $("#btn1").click(() => {
+            //             $(".box").hide(1000);
+            //         });
+
+            //     }
+            // })
+
+
+            $("#btn1").click(() => {
+                $(".box").fadeOut(1000);
+            });
+            $("#btn2").click(() => {
+                $(".box").fadeIn(1000);
+            });
+
+        })
+
+    </script>
+
+
+
+
+</body>
+
+
+</html>

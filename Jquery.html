@@ -13,9 +13,10 @@
 
     <style>
         .box {
-            background-color: aqua;
+            background-color: rgb(0, 0, 0);
             width: 100px;
             height: 100px;
+            border-radius: 50%;
         }
     </style>
 
@@ -30,6 +31,9 @@
     <button id="btn1">Hide</button>
     <button id="btn2">Show</button>
     <!-- <button id="btn3">toggle</button> -->
+    <button id="new">Expand</button>
+    <button id="stop">Stop</button>
+
 
 
 
@@ -88,12 +92,63 @@
             // })
 
 
-            $("#btn1").click(() => {
-                $(".box").fadeOut(1000);
-            });
-            $("#btn2").click(() => {
-                $(".box").fadeIn(1000);
-            });
+            // $("#btn1").click(() => {
+            //     $(".box").fadeOut(1000);
+            // });
+            // $("#btn2").click(() => {
+            //     $(".box").fadeIn(1000);
+            // });
+
+            // $("#btn2").click(() => {
+            //     $(".box").fadeTo(1000, 0.5);
+            // });
+
+            // $("#btn2").click(() => {
+            //     $(".box").fadeToggle(1000, 2);
+            // });
+
+
+            // $("#btn1").click(() => {
+            //     $(".box").slideUp(1000);
+            // });
+
+            // // $("#btn2").click(() => {
+            // //     $(".box").slideDown(1000);
+            // // });
+
+            // $("#btn2").click(() => {
+            //     $(".box").slideToggle(1000);
+            // });
+
+            // $('#new').click(() => {
+            //     $('.box').animate({
+            //         'width': '300px',
+            //         'height': '300px'
+            //     }, 3000)
+            // })
+
+            // $('#stop').click(() => {
+            //     $('.box').stop()
+            // })
+
+            // Call back Function
+
+
+            // $('#btn1').click(() => {
+            //     $('.box').hide(3000, () => {
+            //         alert('your box is Hidden hahaha!!!')
+            //     })
+            // })
+
+
+
+            // Channing
+
+            // $('#btn1').click(() => {
+            //     $('.box').css('width', '200px').slideUp(3000)
+            // })
+
+
 
         })
 

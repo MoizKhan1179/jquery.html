@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <style>
+        .box {
+            background-color: rgb(0, 0, 0);
+            width: 100px;
+            height: 100px;
+            /* border-radius: 50%; */
+        }
+    </style>
+
+
+
+
+
+
+    <label for="userName">UserName :</label>
+    <input type="text" name="" placeholder="Enter UserName" id="text">
+    <button id="append">Append</button>
+    <button id="prepend">prepend</button>
+    <button id="after"> Add After</button>
+    <button id="before">Add Before</button>
+    <button id="delete">Delete All</button>
+    <button id="remove-all">Remove All</button>
+    <button id="add1">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle Class</button>
+    <button id="css">Get CSS Value</button>
+
+    <ul id="list">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+
+
+
+
+    <script>
+        $(document).ready(() => {
+            $('#prepend').click(() => {
+                let a = $('#text').val()
+                $('#list').prepend(`<li>${a}</li>`)
+            })
+
+
+
+
+
+
+            $('#append').click(() => {
+                let a = $('#text').val()
+                $('#list').append(`<li>${a}</li>`)
+            })
+
+
+            $('#after').click(() => {
+                let a = $('#text').val()
+                $('#list').after(`<li>${a}</li>`)
+            })
+
+
+            $('#before').click(() => {
+                let a = $('#text').val()
+                $('#list').before(`<h1>${a}</h1>`)
+            })
+
+            // tag gayab krde ga
+            // $('#remove-all').click(() => {
+
+            //     $('#list').remove()
+            // })
+
+
+            // $('#delete').click(() => {
+
+            //     $('#list').remove()
+            // })
+
+
+            // Add Class
+
+
+            $('#add1').click(() => {
+
+                $('.box').addClass('circle purple')
+            })
+
+            $('#remove').click(() => {
+
+                $('.box').removeClass('circle purple')
+            })
+
+            $('#toggle').click(() => {
+
+                $('.box').toggleClass('circle purple')
+            })
+
+            $('#css').click(() => {
+
+                let ab = $('.box').css('background-color')
+
+                console.log(ab)
+            })
+
+
+
+        })
+
+    </script>
+
+</body>
+
+
+</html>
